@@ -1,0 +1,170 @@
+body {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  overflow-x: hidden;
+  /* border: 1px solid black; */
+}
+
+/* 모달 */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(54, 54, 54, 0.521);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px #00000060;
+}
+
+/* 헤더 */
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  text-align: center;
+  height: 110px;
+}
+
+header > div > h1 {
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+header > div > p {
+  margin-top: 0px;
+}
+
+.inputBox {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 5px 0;
+}
+
+.inputBox > input {
+  width: 250px;
+  height: 30px;
+}
+
+.inputBox > button {
+  width: 50px;
+  height: 37px;
+}
+
+.recordBox {
+  width: 315px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recordBox > div:first-child {
+  display: inline-block;
+  width: 25px;
+  font-weight: bold;
+}
+
+#recordList {
+  display: flex;
+  width: calc(100% - 35px);
+  gap: 10px;
+}
+
+#recordList > div:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 메인 */
+.dataBox {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.dataBox > div {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+  /* background-color: #f7f6f2; */
+}
+
+.dataBox > div > div:first-child {
+  display: inline-block;
+  width: 10%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.dataBox > div:nth-child(1) > div:first-child {
+  color: #2455d1;
+}
+
+.dataBox > div:nth-child(2) > div:first-child {
+  color: #05964d;
+}
+
+.dataBox > div:nth-child(3) > div:first-child {
+  color: #a53009;
+}
+
+.dataBox > div:nth-child(4) > div:first-child {
+  color: #d93237;
+}
+
+/* .dataBox > div:nth-child(5) > div:first-child {
+} */
+
+.companyInfo {
+  display: flex;
+  width: 90%;
+  gap: 15px;
+  align-items: center;
+}
+
+.companyInfo a {
+  /* width: 100%; */
+}
+
+.companyInfo > div {
+  display: flex;
+  gap: 10px;
+}
+
+.companyInfo > div > div:first-child {
+  font-weight: bold;
+}
+
+/* 바텀 */
+.bottomBox {
+  /* border: 1px solid black; */
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottomBox > a {
+  transition: transform 0.3s ease;
+}
+
+.bottomBox > a:hover {
+  transform: scale(1.2);
+}

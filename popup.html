@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>기업의 모든 정보</h1>
+        <p>검색을 원하시는 기업을 작성해주세요!</p>
+      </div>
+      <div>
+        <div class="inputBox">
+          <input type="text" id="companyInput" />
+          <button id="searchButton">검색</button>
+        </div>
+        <div class="recordBox">
+          <div>기록</div>
+          <div id="recordList">
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="dataBox">
+      <div>
+        <div>사람인</div>
+        <div id="saramIn" class="companyInfo">
+          <div>정보를 찾지 못했습니다</div>
+        </div>
+      </div>
+      <div>
+        <div>잡플래닛</div>
+        <div id="jobPlanet" class="companyInfo">
+          <div>정보를 찾지 못했습니다</div>
+        </div>
+      </div>
+      <div>
+        <div>인크루트</div>
+        <div id="inCuit" class="companyInfo">
+          <div>정보를 찾지 못했습니다</div>
+        </div>
+      </div>
+      <div>
+        <div>블라인드</div>
+        <div id="blind" class="companyInfo">
+          <div>정보를 찾지 못했습니다</div>
+        </div>
+      </div>
+      <div>
+        <div>원티드</div>
+        <div id="wanted" class="companyInfo">
+          <div>정보를 찾지 못했습니다</div>
+        </div>
+      </div>
+    </main>
+    <footer class="bottomBox">
+      <a title="Github" href="https://github.com/wjdgusaho/QuickCompSearch" target="_blank">
+        <i class="fa-brands fa-github fa-xl" style="color: #1d304f"></i>
+      </a>
+      <a title="email" href="mailto:wjdgusaho@naver.com" target="_blank">
+        <i class="fa-solid fa-envelope fa-xl" style="color: #1d304f"></i>
+      </a>
+      <a title="" href="https://github.com/wjdgusaho/QuickCompSearch/issues" target="_blank">
+        <i class="fa-solid fa-screwdriver-wrench fa-xl" style="color: #1d304f"></i>
+      </a>
+    </footer>
+    <script src="./popup.js"></script>
+    <script src="./saramInCrawling.js"></script>
+    <script src="./jopPlanetCrawling.js"></script>
+    <script src="./incruitCrawling.js"></script>
+    <script src="./blindCrawling.js"></script>
+    <script src="./wantedCrawling.js"></script>
+  </body>
+</html>
