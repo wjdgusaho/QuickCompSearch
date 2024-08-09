@@ -10,12 +10,9 @@ async function inCruit(inCruitSearchData) {
 
   const companys = [];
 
-  // 회사명과 URL, 회사 정보를 함께 처리
   for (let i = 0; i < companyHeader.length; i++) {
     const headerElement = companyHeader[i];
-    // const infoElement = companyInfo[i];
 
-    // 회사명과 URL 추출
     const header = headerElement.querySelector(".cTtoal_company_header_context > span > a");
     const companyName = header.innerText;
     const companyUrl = header.href;

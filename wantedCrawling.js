@@ -23,7 +23,7 @@ async function wantedDiv(url, searchword) {
   const infoContentDiv = document.getElementById("wanted");
   //console.log(url);
   if (searchword && url) {
-    let contentHTML = `<a href="${url}" target="_blank">${searchword} 원티드 검색 바로가기 </a>`;
+    let contentHTML = `<a href="${url}" target="_blank">${searchword} [원티드] 검색 바로가기 </a>`;
     infoContentDiv.innerHTML = contentHTML;
   } else {
     infoContentDiv.innerHTML = "<div>정보를 찾지 못했습니다</div>";

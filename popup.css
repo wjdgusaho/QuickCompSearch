@@ -93,6 +93,7 @@ header > div > p {
   display: flex;
   flex-flow: column;
   gap: 10px;
+  overflow-y: scroll;
 }
 
 .dataBox > div {
@@ -121,15 +122,22 @@ header > div > p {
 }
 
 .dataBox > div:nth-child(3) > div:first-child {
-  color: #a53009;
+  color: #d93237;
 }
 
 .dataBox > div:nth-child(4) > div:first-child {
-  color: #d93237;
+  color: #a53009;
 }
 
 /* .dataBox > div:nth-child(5) > div:first-child {
 } */
+
+.dataBox > div:nth-child(6) > div:first-child {
+  color: #e36a68;
+}
+
+.dataBox > div:nth-child(7) > div:first-child {
+}
 
 .companyInfo {
   display: flex;
