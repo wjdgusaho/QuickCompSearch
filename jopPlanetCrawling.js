@@ -9,8 +9,6 @@ async function jobPlanet(jobPlanetSearchData) {
     "div:nth-child(1)  > div > div > div > div:nth-child(2) > ul > a"
   );
 
-  //console.log(commpannyElements);
-
   commpannyElements.forEach((element) => {
     // 기업 이름 추출
     const companyName = element.querySelector("span.line-clamp-2.text-h9.text-gray-800").innerText;
